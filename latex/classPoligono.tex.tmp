@@ -1,0 +1,124 @@
+\hypertarget{classPoligono}{}\section{Poligono Class Reference}
+\label{classPoligono}\index{Poligono@{Poligono}}
+
+
+A classe \hyperlink{classPoligono}{Poligono}.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+
+
+Inheritance diagram for Poligono\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoligono_a9311a9a1496878c09c8508b3636e2870}\label{classPoligono_a9311a9a1496878c09c8508b3636e2870}} 
+\hyperlink{classPoligono_a9311a9a1496878c09c8508b3636e2870}{Poligono} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a9311a9a1496878c09c8508b3636e2870}{Poligono\+::\+Poligono}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoligono_a4dd7136ee506cb4355cbdc724c55a4a0}\label{classPoligono_a4dd7136ee506cb4355cbdc724c55a4a0}} 
+\hyperlink{classPoligono_a4dd7136ee506cb4355cbdc724c55a4a0}{$\sim$\+Poligono} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a4dd7136ee506cb4355cbdc724c55a4a0}{Poligono\+::$\sim$\+Poligono}. \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_a05fdf27711af7c7787e108e79d0b585b}{inserir\+Vertice} (\hyperlink{classPonto}{Ponto} vertice)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a05fdf27711af7c7787e108e79d0b585b}{Poligono\+::inserir\+Vertice} -\/ metódo para criar inserir um novo vértice de um polígono. \end{DoxyCompactList}\item 
+int \hyperlink{classPoligono_a2648b689a8ade2238e61471c58ffbe98}{quantidate\+De\+Vertices} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a2648b689a8ade2238e61471c58ffbe98}{Poligono\+::quantidate\+De\+Vertices} -\/ método que retorna a quantidade de vértices de um polígono. \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_a48b40bd2284a5c7ee5253f2070052046}{transladar} (float a, float b)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a48b40bd2284a5c7ee5253f2070052046}{Poligono\+::transladar} -\/ método para transladar um polígono. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}\label{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}} 
+void \hyperlink{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}{imprimir} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}{Poligono\+::imprimir} -\/ método que imprime os vértices de um polígono no formato (x0, y0) -\/$>$ (x1, y1) -\/$>$ ... -\/$>$ (x\+N-\/1, y\+N-\/1) -\/$>$ (x0, y0). \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_a2f29f4916a916cdafb7cbeac8e09cfe2}{rotacionar} (float theta, \hyperlink{classPonto}{Ponto} p0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a2f29f4916a916cdafb7cbeac8e09cfe2}{Poligono\+::rotacionar} -\/ método para rotacionar um polígono. \end{DoxyCompactList}\item 
+double \hyperlink{classPoligono_a7490b5dcca22558b603f6c1f735f3678}{area} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono_a7490b5dcca22558b603f6c1f735f3678}{Poligono\+::area} -\/ método que retorna o valor da área de um polígono. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{classPoligono}{Poligono}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoligono_a7490b5dcca22558b603f6c1f735f3678}\label{classPoligono_a7490b5dcca22558b603f6c1f735f3678}} 
+\index{Poligono@{Poligono}!area@{area}}
+\index{area@{area}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily double Poligono\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classPoligono_a7490b5dcca22558b603f6c1f735f3678}{Poligono\+::area} -\/ método que retorna o valor da área de um polígono. 
+
+\begin{DoxyReturn}{Returns}
+valor da área
+\end{DoxyReturn}
+fonte\+: \href{https://en.wikipedia.org/wiki/Shoelace_formula}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Shoelace\+\_\+formula} \mbox{\Hypertarget{classPoligono_a05fdf27711af7c7787e108e79d0b585b}\label{classPoligono_a05fdf27711af7c7787e108e79d0b585b}} 
+\index{Poligono@{Poligono}!inserir\+Vertice@{inserir\+Vertice}}
+\index{inserir\+Vertice@{inserir\+Vertice}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{inserir\+Vertice()}{inserirVertice()}}
+{\footnotesize\ttfamily void Poligono\+::inserir\+Vertice (\begin{DoxyParamCaption}\item[{\hyperlink{classPonto}{Ponto}}]{\+\_\+vertice }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classPoligono_a05fdf27711af7c7787e108e79d0b585b}{Poligono\+::inserir\+Vertice} -\/ metódo para criar inserir um novo vértice de um polígono. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+vertice} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoligono_a2648b689a8ade2238e61471c58ffbe98}\label{classPoligono_a2648b689a8ade2238e61471c58ffbe98}} 
+\index{Poligono@{Poligono}!quantidate\+De\+Vertices@{quantidate\+De\+Vertices}}
+\index{quantidate\+De\+Vertices@{quantidate\+De\+Vertices}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{quantidate\+De\+Vertices()}{quantidateDeVertices()}}
+{\footnotesize\ttfamily int Poligono\+::quantidate\+De\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classPoligono_a2648b689a8ade2238e61471c58ffbe98}{Poligono\+::quantidate\+De\+Vertices} -\/ método que retorna a quantidade de vértices de um polígono. 
+
+\begin{DoxyReturn}{Returns}
+quantidade de vértices de um polígono 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoligono_a2f29f4916a916cdafb7cbeac8e09cfe2}\label{classPoligono_a2f29f4916a916cdafb7cbeac8e09cfe2}} 
+\index{Poligono@{Poligono}!rotacionar@{rotacionar}}
+\index{rotacionar@{rotacionar}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{rotacionar()}{rotacionar()}}
+{\footnotesize\ttfamily void Poligono\+::rotacionar (\begin{DoxyParamCaption}\item[{float}]{theta,  }\item[{\hyperlink{classPonto}{Ponto}}]{p0 }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classPoligono_a2f29f4916a916cdafb7cbeac8e09cfe2}{Poligono\+::rotacionar} -\/ método para rotacionar um polígono. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & \\
+\hline
+{\em p0} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoligono_a48b40bd2284a5c7ee5253f2070052046}\label{classPoligono_a48b40bd2284a5c7ee5253f2070052046}} 
+\index{Poligono@{Poligono}!transladar@{transladar}}
+\index{transladar@{transladar}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{transladar()}{transladar()}}
+{\footnotesize\ttfamily void Poligono\+::transladar (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classPoligono_a48b40bd2284a5c7ee5253f2070052046}{Poligono\+::transladar} -\/ método para transladar um polígono. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+poligono.\+h\item 
+poligono.\+cpp\end{DoxyCompactItemize}
