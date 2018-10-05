@@ -74,21 +74,17 @@ void Poligono::transladar(float a, float b) {
  */
 void Poligono::rotacionar(float theta, Ponto p0) {
     float novoX, novoY;
-    float anguloRadiano = theta * 180.0 / M_PI;
+    float anguloRadiano = (theta * 180.0) / M_PI;
     float cosAng = cos(anguloRadiano);
     float sinAng = sin(anguloRadiano);
-    float p0X = p0.getX();
-    float p0Y = p0.getY();
 
     for(int i = 0; i < numVertices; i++) {
-        Ponto p = vertices[i];
+        vertices[i].translada(-p0X, -p0Y);
 
-        p.translada(-p0X, -p0Y);
+        novoX = vertices[i].getX() * cosAng - vertices[i].getY() * sinAng;
+        novoY = vertices[i].getX() * sinAng + vertices[i].getY() * cosAng;
 
-        novoX = p.getX() * cosAng - p.getY() * sinAng;
-        novoY = p.getX() * sinAng + p.getY() * cosAng;
-
-        p.setXY(novoX + p0X, novoY + p0Y);
+        vertices[i].setXY(novoX + p0.getX(), novoY + p0.getY());
     }
 }
 
